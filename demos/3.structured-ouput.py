@@ -35,16 +35,16 @@ print("\nRésultat parsé:")
 print(event)
 
 
-from pydantic import BaseModel, Field
-from typing import List
+# from pydantic import BaseModel, Field
+# from typing import List
 
-class Address(BaseModel):
-    """Adresse physique complète d'une personne"""
-    street: str = Field(description="Numéro et nom de rue")
-    city: str = Field(description="Ville")
-    postal_code: str = Field(description="Code postal")
+# class Address(BaseModel):
+#     """Adresse physique complète d'une personne"""
+#     street: str = Field(description="Numéro et nom de rue")
+#     city: str = Field(description="Ville")
+#     postal_code: str = Field(description="Code postal")
 
-class Person(BaseModel):
-    """Informations personnelles complètes d'un individu"""
-    name: str = Field(description="Prénom et nom complets")
-    addresses: List[Address] = Field(description="Adresses connues")
+# class Person(BaseModel):
+#     """Informations personnelles complètes d'un individu"""
+#     name: str = Field(description="Prénom et nom complets")
+#     addresses: List[Address] = Field(description="Adresses connues")
